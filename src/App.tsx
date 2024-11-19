@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { Provider} from "react-redux";
 import { reduxStore } from "./redux/store";
 import Cart from "./pages/Cart";
+import { Register } from "./pages/Register";
 
 const router = createBrowserRouter([
   {
@@ -19,8 +20,8 @@ const router = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: "procced",
-        // element: <PostById />,
+        path: "register",
+        element: <Register />,
 
       },
     ],
